@@ -1,7 +1,7 @@
 name: focus
 description: A new Flutter project.
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: 'none'
 
 version: 1.0.0+1
 
@@ -14,6 +14,8 @@ dependencies:
   flutter_riverpod: ^2.3.6
   freezed_annotation: ^2.2.0
   shared_preferences: ^2.1.1
+  smooth_page_indicator: ^1.1.0
+  flutter_svg: ^2.0.6
 
   cupertino_icons: ^1.0.2
 
@@ -30,6 +32,7 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/svg/
 
   fonts:
     - family: ledger
