@@ -1,0 +1,40 @@
+name: focus
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0-102.0.dev <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.3.6
+  freezed_annotation: ^2.2.0
+  shared_preferences: ^2.1.1
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  freezed: ^2.3.4
+  build_runner: ^2.4.4
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: ledger
+      fonts:
+        - asset: assets/fonts/Ledger-Regular.ttf
+    - family: lilita
+      fonts:
+        - asset: assets/fonts/LilitaOne-Regular.ttf
