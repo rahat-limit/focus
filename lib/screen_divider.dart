@@ -5,6 +5,7 @@ import 'package:focus/screens/error_screen.dart';
 import 'package:focus/screens/home_screen.dart';
 import 'package:focus/screens/intro_screen.dart';
 import 'package:focus/screens/loading_screen.dart';
+import 'package:focus/screens/progress_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ScreenDivider extends ConsumerStatefulWidget {
@@ -16,7 +17,7 @@ class ScreenDivider extends ConsumerStatefulWidget {
 
 final screenProvider = FutureProvider<int>((ref) async {
   SharedPreferences pref = await SharedPreferences.getInstance();
-  pref.clear();
+  // pref.clear();
   // - to see intro screen
   bool check = pref.getBool('seen') ?? false;
   if (!check) {
@@ -50,7 +51,10 @@ class _ScreenDividerState extends ConsumerState<ScreenDivider> {
           data: (index) => screens[index],
           error: (err, stack) => const ErrorScreen(),
           loading: () => const LoadingScreen()),
-      routes: {HomeScreen.routeName: (context) => const HomeScreen()},
+      routes: {
+        HomeScreen.routeName: (context) => const HomeScreen(),
+        ProgressScreen.routeName: (context) => const ProgressScreen()
+      },
     );
   }
 }

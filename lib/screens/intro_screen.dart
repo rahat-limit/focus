@@ -36,7 +36,7 @@ class _IntroScreenState extends ConsumerState<IntroScreen> {
           SmoothPageIndicator(
             controller: controller,
             count: tabBarContentPages.length,
-            effect: ExpandingDotsEffect(
+            effect: const ExpandingDotsEffect(
                 dotWidth: 21,
                 dotHeight: 21,
                 // ignore: use_full_hex_values_for_flutter_colors
