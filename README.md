@@ -60,7 +60,7 @@ A few of the things you can do with KAWAI:
 * [FL Chart - Diagram](https://github.com/imaNNeo/fl_chart/blob/master/example/lib/presentation/samples/pie/pie_chart_sample1.dart)
 
 <p align="center">
-    <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" width=200>
+    <img src="https://www.postgresql.org//media/img/about/press/elephant.png" width=200>
     <img src="https://github.com/rrousselGit/riverpod/blob/master/resources/icon/Facebook%20Cover%20A.png?raw=true" width=200>
 </p>
 
